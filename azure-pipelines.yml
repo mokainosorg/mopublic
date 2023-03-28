@@ -1,0 +1,23 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+variables:
+  - name: one
+    value: initialValue
+stages:
+  - stage: 
+    jobs:
+      - job: 
+        displayName: stage1job1
+        steps:
+          - script: |
+              echo ${{ variables.one}}
+            displayName: stage1job1step1
+          - bash: echo  ##vso[task.setvariable variable=one]secondvalue"
+            displayName: setdisplayname
+          - script: |
+              echo ${{ variables.one }}
+              echo $(one)
+            displayName: second variable pass
