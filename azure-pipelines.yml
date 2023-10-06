@@ -25,3 +25,8 @@ stages:
         - bash: echo "s2j1 "
   - stage: s3
     dependsOn: []
+    jobs:
+    - job: s3j1
+      steps:
+        - bash: echo "s3j1"
+
