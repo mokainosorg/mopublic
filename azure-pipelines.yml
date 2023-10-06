@@ -17,3 +17,11 @@ stages:
     - job: js1j2
       steps:
         - bash: echo "js1j2s1"
+  - stage: s2
+    dependsOn: []
+    jobs:
+    - job: s2j1
+      steps:
+        - bash: echo "s2j1 "
+  - stage: s3
+    dependsOn: []
