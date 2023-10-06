@@ -13,8 +13,3 @@ stages:
     jobs:
     - job: js1j1
       steps: js1j1s1
-      - bash: echo "js1j1s1"
-    - job: js1j2
-      steps: js1j1s2
-      - bash: echo "js1j1s2"
-  - stage: s2
