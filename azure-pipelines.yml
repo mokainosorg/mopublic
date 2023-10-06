@@ -10,7 +10,7 @@ variables:
 
 stages:
   - stage: s1
-    jobs: js1
+    jobs:
     - job: js1j1
       steps: js1j1s1
       - bash: echo "js1j1s1"
